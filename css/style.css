@@ -1,18 +1,18 @@
-body{
+body {
     background-color: #f0ffff ;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 10px;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#form{
+#form {
     padding-top: 100px;
     display: flex;
     flex-direction: column;
@@ -54,17 +54,17 @@ main{
     
   }
 
-  #form >h1{
+  #form > h1 {
       font-size: 1.5rem ;
   }
   
-  input{
+  input {
       width: 250px;
       height: 25px;
       margin: 15px 0px 15px 0;
   }
 
-  button{
+  button {
       border-style: solid;
       border-width: 0px;
       border-radius: 5px;
@@ -75,8 +75,8 @@ main{
       font-weight: bold;
   }
 
-  ul {
-    max-width: 560px;
+  #howItWorks > ul {
+    max-width: 800px;
     margin-top: 0;
     margin-right: auto;
     margin-bottom: 45px;
@@ -84,125 +84,190 @@ main{
     text-align: left;
     line-height: 1.5;
     list-style-type: none;
+    list-style-position: outside;
+    list-style-image: url('images/fire-32.ico');
     
   }
 
   
-  li {
-    margin: 100px 0;
+  #howItWorks > ul li {
+    margin: 30px 0;
     display: list-item;
+
   }
   
 
 
-  #header-img{
+  #header-img {
       width: 300px;
       padding-right: 650px;
       
   }
 
-  li>ul>p{
+  #howItWorks > ul li > p{
       font-size: 1rem;
       margin-top: 1px;
   }
 
-  li>ul>h2{
+  #howItWorks > ul li > h2 {
     font-size: 1.5rem;
     margin-bottom: 1px;
 }
 
-#how-it-works {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-*{
-    margin: 0;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    padding: 0;
-    padding-top: 0px;
-    padding-right: 0px;
-    box-sizing: border-box;
-}
-iframe {
-    border-width: 2px;
-    border-top-width: 2px;
-    border-right-width: 2px;
-    border-bottom-width: 2px;
-    border-left-width: 2px;
-    border-style: inset;
-    border-top-style: inset;
-    border-right-style: inset;
-    border-bottom-style: inset;
-    border-left-style: inset;
-    border-color: initial;
-    border-top-color: initial;
-    border-right-color: initial;
-    border-bottom-color: initial;
-    border-left-color: initial;
-    border-image: initial;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-}
-#pricing{
-    margin-top: 60px;
+#pricing {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    margin:50px;
+    align-content: center;
+    justify-content: space-between;
 }
-.procuct{
+
+.product {
+    height: 330px;
+    width: 350px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    width: calc(100% / 3);
+    font-size: 1rem;
     margin: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000;
-    border-top-color: rgb(0, 0, 0);
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-right-color: rgb(0, 0, 0);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-bottom-color: rgb(0, 0, 0);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-left-color: rgb(0, 0, 0);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
 }
-.procuct > .level {
-    background-color: #ddd;
-    color: #000;
-    padding: 15px 0;
-    padding-top: 15px;
-    padding-right: 0px;
-    padding-left: 0px;
+
+#tenor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+
+}
+
+#tenor > ul {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1px;
+}
+#tenor > div { 
+    background-color: #e7f1f1;
+    align-self: stretch;
+    width: 350px;
+    height: 50px;
+    border-radius: 2px;
+    font-size: smaller;
+
+}
+
+#tenor > ul li {
+    padding: 2px;
+    text-align: center;
+    list-style-type:square;
+    text-align: left;
+}
+
+#bass {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+}
+
+
+#bass > ul {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1px;
+}
+#bass > div { 
+    background-color: #e7f1f1;
+    align-self: stretch;
+    width: 350px;
+    height: 50px;
+    border-radius: 2px;
+    font-size: smaller;
+
+}
+
+#bass > ul li {
+    padding: 2px;
+    text-align: center;
+    list-style-type:square;
+    text-align: left;
+
+}
+
+#valve {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-items: center;
+}
+
+
+#valve > ul {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1px;
+}
+#valve > div{ 
+    background-color: #e7f1f1;
+    align-self: stretch;
+    width: 350px;
+    height: 50px;
+    border-radius: 2px;
+    font-size: smaller;
+
+}
+
+#valve > ul li {
+    padding: 2px;
+    text-align: center;
+    list-style-type:square;
+    text-align: left;
+
+}
+
+footer{
+  width: 90%;
+  background-color: #e7f1f1;
+  margin-left: 60px;
+  margin-bottom: -16px;
+  display: flex;
+  flex-direction: column;
+}
+
+footer > span{
+    align-self: flex-end;
+    padding-right: 15px;
     padding-bottom: 15px;
-    width: 100%;
-    text-transform: uppercase;
-    font-weight:  700;
+    border-radius: 2px;
 }
 
-
+.button-navbar {
+    background-color:#e7f1f1;
+    overflow: hidden;
+    width: 100%;
+    right: 0;
+    top: 0;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+    
+  }
   
+  .button-navbar a {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#333;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    height: 40px;
+    padding: 16px 16px
+    
+  }
