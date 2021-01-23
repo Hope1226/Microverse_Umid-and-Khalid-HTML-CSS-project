@@ -75,44 +75,13 @@ main {
       font-weight: bold;
   }
 
-  #howItWorks > ul {
-    max-width: 800px;
-    margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 45px;
-    margin-left: auto;
-    text-align: left;
-    line-height: 1.5;
-    list-style-type: none;
-    list-style-position: outside;
-    list-style-image: url('images/fire-32.ico');
-    
-  }
 
-  
-  #howItWorks > ul li {
-    margin: 30px 0;
-    display: list-item;
-
-  }
-  
-
-
-  #header-img {
+#header-img {
       width: 300px;
       padding-right: 650px;
       
   }
 
-  #howItWorks > ul li > p{
-      font-size: 1rem;
-      margin-top: 1px;
-  }
-
-  #howItWorks > ul li > h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1px;
-}
 
 #pricing {
     display: flex;
@@ -271,3 +240,34 @@ footer > span{
     padding: 16px 16px
     
   }
+
+
+  .container {
+    height: 70%;
+    width: 1000px;
+    margin: 1.5rem 0rem;
+   
+    display: flex;
+    flex-direction: column;
+
+}
+
+.child {
+    display: flex;
+
+
+}
+
+.icon {
+    flex: 1;
+    width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description{
+    flex: 2;
+    text-align: left;
+    font-size: 1rem;
+}
